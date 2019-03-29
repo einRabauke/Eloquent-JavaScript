@@ -1,6 +1,6 @@
 // Example 2.1
 let out = '';
-for (let i=0; i<7;i++) {
+for (let i=0; i<7; i++) {
   out = out + '#';
   console.log(out);
 }
@@ -36,18 +36,18 @@ while (i < 100) {
 let i = 0;
 while (i < 100) {
   i++;
-  switch {
-  case (i%3 == 0 && i%5 == 0):
-    console.log('FizzBuzz');
-    break;
-  case (i%3 == 0):
-    console.log('Fizz');
-    break;
-  case (i%5 == 0):
-    console.log('Buzz');
-    break;
-  default:
-    console.log(i);
+  switch (i) {
+    case (i%3 == 0 && i%5 == 0):
+      console.log('FizzBuzz');
+      break;
+    case (i%3 == 0):
+      console.log('Fizz');
+      break;
+    case (i%5 == 0):
+      console.log('Buzz');
+      break;
+    default:
+      console.log(i);
   }
 }
 
@@ -57,7 +57,7 @@ let width = 8;
 let part = ' #';
 let row = '';
 let board = '';
-for (let i = 0; i < size; i++;) {
+for (let i = 0; i < size; i++) {
   row = '';
   if (i%2 == 1) {
     row = row + '#';
