@@ -1,0 +1,74 @@
+// Example 2.1
+let out = '';
+for (let i=0; i<7;i++) {
+  out = out + '#';
+  console.log(out);
+}
+
+// Example 2.2
+// First Part
+let i = 0;while (i < 100) {
+  i++;
+  if (i%3 == 0) {
+    console.log('Fizz');
+  } else if (i%5 == 0) {
+    console.log('Buzz');
+  } else {
+    console.log(i);
+  }
+}
+// Second Part
+let i = 0;
+while (i < 100) {
+  i++;
+  if (i%3 == 0 && i%5 == 0) {
+    console.log('FizzBuzz');
+  } else if (i%3 == 0) {
+    console.log('Fizz');
+  } else if (i%5 == 0) {
+    console.log('Buzz');
+  } else {
+    console.log(i);
+  }
+}
+
+// Alternative
+let i = 0;
+while (i < 100) {
+  i++;
+  switch {
+  case (i%3 == 0 && i%5 == 0):
+    console.log('FizzBuzz');
+    break;
+  case (i%3 == 0):
+    console.log('Fizz');
+    break;
+  case (i%5 == 0):
+    console.log('Buzz');
+    break;
+  default:
+    console.log(i);
+  }
+}
+
+// Example 2.3
+let size = 8;
+let width = 8;
+let part = ' #';
+let row = '';
+let board = '';
+for (let i = 0; i < size; i++;) {
+  row = '';
+  if (i%2 == 1) {
+    row = row + '#';
+  }
+  for (let k = 0; k < width/2; k++) {
+    row = row + part;
+  }
+  if (row.length > size) {
+    row = row(0:size);
+  }
+  row = row + '\n';
+  board = board + row;
+}
+console.log(board);
