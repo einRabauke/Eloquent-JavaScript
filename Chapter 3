@@ -22,8 +22,8 @@ function isEven(num) {
 
 // Bean counting
 function countBs(word) {
-  	count = 0;
-	for (var i = 0; i < word.length; i++){
+  	let count = 0;
+	for (let i = 0; i < word.length; i++){
     	if (word[i] == "B"){
         	count++;
         }
@@ -32,8 +32,8 @@ function countBs(word) {
 }
 
 function countChar(word, C) {
-  	count = 0;
-	for (var i = 0; i < word.length; i++){
+  	let count = 0;
+	for (let i = 0; i < word.length; i++){
     	if (word[i] == C){
         	count++;
         }
