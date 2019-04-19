@@ -41,3 +41,23 @@ console.log(sum(range(1, 10)));
 
 
 // Reversing an Array
+function  reverseArray(array) {
+  let rev = [];
+  let ele = "";
+  for (let i = array.length-1; i >= 0; i--) {
+    ele = array[i];
+    rev.push(ele);
+  }
+  return(rev);
+}
+
+function reverseArrayInPlace(array) {
+  let last = "";
+  let l = array.length;
+  for (let i = 0; i <= Math.floor(l/2); i++) {
+    last = array[i];
+    array[i] = array[l-1-i];
+  	array[l-1-i] = last;
+  }
+  return[array];
+}
